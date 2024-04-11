@@ -7,6 +7,7 @@ from utility.verification import Verification
 import json
 from block import Block
 from transaction import Transaction
+from wallet import Wallet
 
 owner = 'Max'
 
@@ -117,9 +118,13 @@ class Blockchain:
         proof = self.proof_of_work()
         reward_transaction = Transaction('MINING', self.hosting_node, '', MINING_REWARD)
         copied_transactions = self.__open_transactions[:]
+        for tx in copied_transactions:
+            if not Wallet.verify_transaction(tx):
+                return False
         copied_transactions.append(reward_transaction)
         # print(hashed_block)
         block = Block(len(self.__chain), hashed_block, copied_transactions, proof)
+        
         self.__chain.append(block)
         self.__open_transactions = []
         self.save_data()
