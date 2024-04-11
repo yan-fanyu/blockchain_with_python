@@ -9,100 +9,30 @@
     {
         "index": 1,
         "previous_hash": "c775ae7455f086e2fc68520d31bfebfdb18ffeaceb933085c510d5f8d2177813",
-        "timestamp": 1712802068.7232018,
+        "timestamp": 1712831204.3984401,
         "transactions": [
             {
                 "sender": "MINING",
-                "recipient": "fd1708e8-60fc-4e5c-bb9c-75244e2caf4f",
-                "amount": 10
+                "recipient": "30819f300d06092a864886f70d010101050003818d0030818902818100bd0da094e7295d795ea560d821533406bf866dde198d1929f7f706bd4856580aa1f6b3db3625af613a0f4307c2bf48080ffbb4016b15c6e3f2fc0f5859b22f951772bcb0fbe04f7371760374b91f33f66d1cc09a77ccfe79bbedeebf90db98736316219f75d08e3e1df1d14099e83a178c60ca25e501a321fa90bdd9d090aa010203010001",
+                "amount": 10,
+                "signature": ""
             }
         ],
         "proof": 92
     },
     {
         "index": 2,
-        "previous_hash": "7edcd04d41e030be9b43cc4c6c2440ac5a58d653cbd0ec62fc0f8d4967ea5fd0",
-        "timestamp": 1712802153.8369653,
+        "previous_hash": "cb1421cdffc4cc5be4f687b7a2c7e10ddf3b9aa659eaccf5b81ee32623035003",
+        "timestamp": 1712831204.3984401,
         "transactions": [
             {
                 "sender": "MINING",
-                "recipient": "a96386ce-ca68-440d-88c8-6ed218f78bc8",
-                "amount": 10
+                "recipient": "30819f300d06092a864886f70d010101050003818d0030818902818100bd0da094e7295d795ea560d821533406bf866dde198d1929f7f706bd4856580aa1f6b3db3625af613a0f4307c2bf48080ffbb4016b15c6e3f2fc0f5859b22f951772bcb0fbe04f7371760374b91f33f66d1cc09a77ccfe79bbedeebf90db98736316219f75d08e3e1df1d14099e83a178c60ca25e501a321fa90bdd9d090aa010203010001",
+                "amount": 10,
+                "signature": ""
             }
         ],
-        "proof": 83
-    },
-    {
-        "index": 3,
-        "previous_hash": "d81848122c503cfeaec7fe5f7a673d887524761dd108372e8127c81679f34577",
-        "timestamp": 1712802291.1791978,
-        "transactions": [
-            {
-                "sender": "MINING",
-                "recipient": "9e1bf468-7e96-4549-826e-050e51f7f1c5",
-                "amount": 10
-            }
-        ],
-        "proof": 783
-    },
-    {
-        "index": 4,
-        "previous_hash": "77708b46e25ca2041178c02ca799809d3f89c8d4de2d021d9df07b263819f16d",
-        "timestamp": 1712806326.5644698,
-        "transactions": [
-            {
-                "sender": "9e1bf468-7e96-4549-826e-050e51f7f1c5",
-                "recipient": "Nan",
-                "amount": 2.5
-            },
-            {
-                "sender": "MINING",
-                "recipient": "Max",
-                "amount": 10
-            }
-        ],
-        "proof": 167
-    },
-    {
-        "index": 5,
-        "previous_hash": "e6cbe0f522ffa44c7696ee5d1881dbb4a31cca8aa86f271a6441a63b7daaeeaa",
-        "timestamp": 1712806326.5644698,
-        "transactions": [
-            {
-                "sender": "Max",
-                "recipient": "Nan2",
-                "amount": 3.4
-            },
-            {
-                "sender": "Max",
-                "recipient": "N3",
-                "amount": 1.2
-            },
-            {
-                "sender": "Max",
-                "recipient": "N3",
-                "amount": 0.4
-            },
-            {
-                "sender": "MINING",
-                "recipient": "Max",
-                "amount": 10
-            }
-        ],
-        "proof": 99
-    },
-    {
-        "index": 6,
-        "previous_hash": "602825546755250a23b507e62a9055d58045171f916fd481a1b8b3de83dfba01",
-        "timestamp": 1712806365.2381861,
-        "transactions": [
-            {
-                "sender": "MINING",
-                "recipient": "Max",
-                "amount": 10
-            }
-        ],
-        "proof": 213
+        "proof": 424
     }
 ]
 []

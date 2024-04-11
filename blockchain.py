@@ -8,8 +8,6 @@ import json
 from block import Block
 from transaction import Transaction
 
-
-
 owner = 'Max'
 
 blockchain = []
@@ -61,12 +59,17 @@ class Blockchain:
             print("Cleanup!")
 
     def save_data(self):
-        with open('blockchain.txt', mode='w') as f:
-            saveable_chain = [block.__dict__ for block in [Block(block_el.index, block_el.previous_hash, [tx.__dict__ for tx in block_el.transactions], block_el.proof, block_el.timestamp) for block_el in self.__chain]]
-            f.write(json.dumps(saveable_chain))
-            f.write('\n')
-            saveable_tx = [tx.__dict__ for tx in self.__open_transactions]
-            f.write(json.dumps(saveable_tx))
+        try:
+            with open('blockchain.txt', mode='w') as f:
+                print("blockchain.py *************************************")
+                saveable_chain = [block.__dict__ for block in [Block(block_el.index, block_el.previous_hash, [tx.__dict__ for tx in block_el.transactions], block_el.proof, block_el.timestamp) for block_el in self.__chain]]
+                print("saveable_chain = ", saveable_chain)
+                f.write(json.dumps(saveable_chain))
+                f.write('\n')
+                saveable_tx = [tx.__dict__ for tx in self.__open_transactions]
+                f.write(json.dumps(saveable_tx))
+        except IOError:
+            print('saving error')
 
     def proof_of_work(self):
         last_block = self.__chain[-1]
