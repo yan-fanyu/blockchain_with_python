@@ -81,6 +81,8 @@ class Blockchain:
         return proof
     
     def get_balance(self):
+        if self.hosting_node == None:
+            return None
         participant = self.hosting_node
         tx_sender = [[tx.amount for tx in block.transactions if tx.sender == participant] for block in self.__chain]
         open_tx_sender = [tx.amount for tx in self.__open_transactions if tx.sender == participant]
@@ -104,7 +106,7 @@ class Blockchain:
         transaction = Transaction(sender, recipient, signature, amount)
         if Verification.verify_transaction(transaction, self.get_balance):
             self.__open_transactions.append(transaction)
-            # self.save_data()
+            self.save_data()
             return True
         else:
             return False
